@@ -1,0 +1,12 @@
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.deps.json
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.dll
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\ref\GroundControl.Interview.SeniorDeveloper.Model.dll
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.pdb
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.csproj.AssemblyReference.cache
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.AssemblyInfoInputs.cache
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.AssemblyInfo.cs
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.csproj.CoreCompileInputs.cache
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.dll
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\ref\GroundControl.Interview.SeniorDeveloper.Model.dll
+C:\Users\duthi\source\repos\GroundControl.Interview.SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.pdb
