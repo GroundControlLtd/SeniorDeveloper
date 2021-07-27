@@ -205,6 +205,19 @@
           }
         }
       },
+      "GroundControl.Interview.SeniorDeveloper.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "GroundControl.Interview.SeniorDeveloper.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GroundControl.Interview.SeniorDeveloper.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GroundControl.Interview.SeniorDeveloper.Data.dll": {}
+        }
+      },
       "GroundControl.Interview.SeniorDeveloper.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -638,6 +651,11 @@
         "version.txt"
       ]
     },
+    "GroundControl.Interview.SeniorDeveloper.Data/1.0.0": {
+      "type": "project",
+      "path": "../GroundControl.Interview.SeniorDeveloper.Data/GroundControl.Interview.SeniorDeveloper.Data.csproj",
+      "msbuildProject": "../GroundControl.Interview.SeniorDeveloper.Data/GroundControl.Interview.SeniorDeveloper.Data.csproj"
+    },
     "GroundControl.Interview.SeniorDeveloper.Model/1.0.0": {
       "type": "project",
       "path": "../GroundControl.Interview.SeniorDeveloper.Model/GroundControl.Interview.SeniorDeveloper.Model.csproj",
@@ -646,6 +664,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "GroundControl.Interview.SeniorDeveloper.Data >= 1.0.0",
       "GroundControl.Interview.SeniorDeveloper.Model >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "System.Data.SqlClient >= 4.8.2"
@@ -678,6 +697,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj": {
+              "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj"
+            },
             "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
               "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
             }
