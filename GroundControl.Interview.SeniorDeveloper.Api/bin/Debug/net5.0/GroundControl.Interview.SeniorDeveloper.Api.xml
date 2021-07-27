@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GroundControl.Interview.SeniorDeveloper.Api</name>
+    </assembly>
+    <members>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Controllers.VehiclesController.#ctor(GroundControl.Interview.SeniorDeveloper.Api.Queries.IVehicleQueries)">
+            <summary>
+            constructor
+            </summary>
+            <param name="vehicleQueries"></param>
+        </member>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Controllers.VehiclesController.GetMakesAsync">
+            <summary>
+            Returns all vehical makes. 
+            </summary>
+            <remarks>
+            Here is a sample remarks placeholder.
+            </remarks>
+            <returns>A VehicleMake</returns>
+        </member>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Controllers.VehiclesController.GetModelsAsync(System.Int32)">
+            <summary>
+            Returns relevent models per makeId.
+            </summary>
+            <remarks>
+            Here is a sample remarks placeholder.
+            </remarks>
+            <param name="makeId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
