@@ -41,9 +41,9 @@ else
                 <InputSelect @bind-Value="@_selectedModelId">
                     <option value="0"> --- Select Vehicle Model --- </option>
                     @foreach (var model in _models)
-                                {
+					{
                         <option value="@model.Id">@model.Name</option>
-                                }
+					}
                 </InputSelect>
             </EditForm>
         }

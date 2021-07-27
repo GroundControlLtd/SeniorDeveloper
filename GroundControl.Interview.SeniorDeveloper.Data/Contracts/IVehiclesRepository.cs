@@ -6,8 +6,8 @@ namespace GroundControl.Interview.SeniorDeveloper.Data.Contracts
 {
     public interface IVehiclesRepository
     {
-        public Task<IEnumerable<VehicleMake>> GetMakesAsync();
+        Task<IEnumerable<VehicleMake>> GetMakesAsync();
 
-        public Task<IEnumerable<VehicleModel>> GetModelsByMakeAsync(int makeId);
+        Task<IEnumerable<VehicleModel>> GetModelsByMakeAsync(int makeId);
     }
 }
