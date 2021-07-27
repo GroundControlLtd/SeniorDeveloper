@@ -82,6 +82,20 @@ using GroundControl.Interview.SeniorDeveloper.Web.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Web\Pages\Index.razor"
+using System.Text.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Web\Pages\Index.razor"
+using Model;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +104,49 @@ using GroundControl.Interview.SeniorDeveloper.Web.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 44 "C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Web\Pages\Index.razor"
+       
+    private IEnumerable<VehicleMake> _makes { get; set; }
+    private IEnumerable<VehicleModel> _models { get; set; }
+
+    private int _selectedMakeId { get; set; }
+    private int _selectedModelId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // ToDo if time - move base url to configuration and inject
+
+        // ToDo - duplicate code, can make a generic helper function
+
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/makes");
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        using var responseStream = await response.Content.ReadAsStreamAsync();
+
+        _makes = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleMake>>(responseStream);
+    }
+
+    private async Task OnMakeSelected()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/models/{_selectedMakeId}");
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        using var responseStream = await response.Content.ReadAsStreamAsync();
+
+        _models = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleModel>>(responseStream);
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
     }
 }
 #pragma warning restore 1591
