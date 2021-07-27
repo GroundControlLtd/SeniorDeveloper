@@ -2,7 +2,6 @@
 using GroundControl.Interview.SeniorDeveloper.Model;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace GroundControl.Interview.SeniorDeveloper.Api.Controllers
@@ -17,8 +16,6 @@ namespace GroundControl.Interview.SeniorDeveloper.Api.Controllers
         {
             _vehiclesRepository = vehiclesRepository;
         }
-
-        //ToDo if time - returning 200 OK but not actually error handling
 
         [HttpGet]
         [Route("makes")]
@@ -36,12 +33,6 @@ namespace GroundControl.Interview.SeniorDeveloper.Api.Controllers
         public async Task<ActionResult<IEnumerable<VehicleModel>>> GetModelsByMakeAsync(int makeId)
         {
             var results = await _vehiclesRepository.GetModelsByMakeAsync(makeId);
-
-            // ToDo - Might need to take this out for time sake if it requires error handling in the web, but this is better practice
-            if (results == null || !results.Any())
-            {
-                return NotFound();
-            }
 
             return Ok(results);
         }

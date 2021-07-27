@@ -1,4 +1,3 @@
-using GroundControl.Interview.SeniorDeveloper.Web.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +21,6 @@ namespace GroundControl.Interview.SeniorDeveloper.Web
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<VehicleService>();
             services.AddHttpClient();
         }
 

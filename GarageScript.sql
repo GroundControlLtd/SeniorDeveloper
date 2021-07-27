@@ -243,4 +243,28 @@ REFERENCES [dbo].[VehicleMake] ([MakeId])
 GO
 ALTER TABLE [dbo].[VehicleModel] CHECK CONSTRAINT [FK_VehicleModel_VehicleMake]
 GO
-
+CREATE PROCEDURE [dbo].[Usp_Vehicle_GetModelsByMake]
+(
+	@MakeId INT
+)
+AS
+BEGIN
+	SELECT
+		[ModelId] AS Id,
+		[Model] AS [Name]
+	FROM
+		[VehicleModel]
+	WHERE
+		MakeId = @MakeId
+END
+GO
+CREATE PROCEDURE [Usp_Vehicle_GetAllMakes]
+AS
+BEGIN
+	SELECT
+		[MakeId] AS Id,
+		[Make] AS [Name]
+	FROM
+		[VehicleMake]
+END
+GO
