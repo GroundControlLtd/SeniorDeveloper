@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GroundControl.Interview.SeniorDeveloper.Api</name>
+    </assembly>
+    <members>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Controllers.VehiclesController.#ctor(GroundControl.Interview.SeniorDeveloper.Api.Queries.IVehicleQueries)">
+            <summary>
+            constructor
+            </summary>
+            <param name="vehicleQueries"></param>
+        </member>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Controllers.VehiclesController.GetMakesAsync">
+            <summary>
+            Returns all vehical makes. 
+            </summary>
+            <remarks>
+            The purpose of this endpoint to retreive all the vehical makes from the database.
+            </remarks>
+            <returns>A VehicleMake</returns>
+        </member>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Controllers.VehiclesController.GetModelsAsync(System.Int32)">
+            <summary>
+            Returns relevent models per makeId.
+            </summary>
+            <remarks>
+            The purpose of this endpoint to retreive vehical model from the database per makeId.
+            </remarks>
+            <param name="makeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:GroundControl.Interview.SeniorDeveloper.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

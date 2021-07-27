@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GroundControl.Interview.SeniorDeveloper.Model
+﻿namespace GroundControl.Interview.SeniorDeveloper.Model
 {
     public class VehicleMake
     {

@@ -1,57 +1,66 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {}
+    "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {
+    "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
+        "projectUniqueName": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
         "projectName": "GroundControl.Interview.SeniorDeveloper.Api",
-        "projectPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
-        "packagesPath": "C:\\Users\\duthi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\obj\\",
+        "projectPath": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
+        "packagesPath": "C:\\Users\\khalid.usman\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\duthi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khalid.usman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/prego-informatic-ltd/_packaging/prego-informatic-ltd/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
-                "projectPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
+              "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+                "projectPath": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
               }
             }
           }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
         }
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -76,30 +85,32 @@
         }
       }
     },
-    "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+    "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
+        "projectUniqueName": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
         "projectName": "GroundControl.Interview.SeniorDeveloper.Model",
-        "projectPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
-        "packagesPath": "C:\\Users\\duthi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\obj\\",
+        "projectPath": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
+        "packagesPath": "C:\\Users\\khalid.usman\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\Training_and_Learning\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\duthi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khalid.usman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/prego-informatic-ltd/_packaging/prego-informatic-ltd/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {

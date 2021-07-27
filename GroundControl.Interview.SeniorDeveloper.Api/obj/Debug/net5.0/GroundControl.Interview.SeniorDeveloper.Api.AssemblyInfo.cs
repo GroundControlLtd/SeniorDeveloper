@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aa3f3df8-df33-4c02-a68a-04ca3ca76404")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroundControl.Interview.SeniorDeveloper.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
