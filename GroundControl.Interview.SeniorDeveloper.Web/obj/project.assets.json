@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "GroundControl.Interview.SeniorDeveloper.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/GroundControl.Interview.SeniorDeveloper.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GroundControl.Interview.SeniorDeveloper.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GroundControl.Interview.SeniorDeveloper.Model/1.0.0": {
+      "type": "project",
+      "path": "../GroundControl.Interview.SeniorDeveloper.Model/GroundControl.Interview.SeniorDeveloper.Model.csproj",
+      "msbuildProject": "../GroundControl.Interview.SeniorDeveloper.Model/GroundControl.Interview.SeniorDeveloper.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "GroundControl.Interview.SeniorDeveloper.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ConorMaher\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+              "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
