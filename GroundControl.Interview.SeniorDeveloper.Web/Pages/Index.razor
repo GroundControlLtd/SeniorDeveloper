@@ -1,8 +1,80 @@
 ﻿@page "/"
-    Hello World!
 
-    Vehicle Cascading Dropdowns Go Here.
+@using System.Text.Json
+@using Model;
 
-    @code {
+@inject IHttpClientFactory ClientFactory
 
+@if (_makes != null)
+{
+    <EditForm Model="this">
+        <label>Select Make</label><br />
+        <InputSelect @bind-Value="_selectedMakeId">
+            <option value="0"> --- Select Vehicle Make --- </option>
+            @foreach (var make in _makes)
+                {
+                <option value="@make.Id">@make.Name</option>
+                }
+        </InputSelect>
+    </EditForm>
+}
+else
+{
+    <b>Loading...</b>
+}
+
+@if (_models != null && _models.Any())
+{
+    <EditForm Model="this">
+        <label>Select Model</label><br />
+        <InputSelect @bind-Value="@_selectedModelId">
+            <option value="0"> --- Select Vehicle Model --- </option>
+            @foreach (var model in _models)
+                {
+                <option value="@model.Id">@model.Name</option>
+                }
+        </InputSelect>
+    </EditForm>
+}
+else
+{
+    <p>No Models found for selected Make.</p>
+}
+
+@code {
+    private IEnumerable<VehicleMake> _makes { get; set; }
+    private IEnumerable<VehicleModel> _models { get; set; }
+
+    private int _selectedMakeId { get; set; }
+    private int _selectedModelId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // ToDo if time - move base url to configuration and inject
+
+        // ToDo - duplicate code, can make a generic helper function
+
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/makes");
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        using var responseStream = await response.Content.ReadAsStreamAsync();
+
+        _makes = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleMake>>(responseStream);
     }
+
+    private async Task OnMakeSelected()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/models/{_selectedMakeId}");
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        using var responseStream = await response.Content.ReadAsStreamAsync();
+
+        _models = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleModel>>(responseStream);
+    }
+}
