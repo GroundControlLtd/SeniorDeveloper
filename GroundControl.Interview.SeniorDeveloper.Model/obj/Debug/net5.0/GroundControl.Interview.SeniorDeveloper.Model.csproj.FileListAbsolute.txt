@@ -14,7 +14,6 @@ C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorD
 C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.dll
 C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\ref\GroundControl.Interview.SeniorDeveloper.Model.dll
 C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.pdb
-C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.csprojAssemblyReference.cache
 C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.AssemblyInfoInputs.cache
 C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Model\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.AssemblyInfo.cs

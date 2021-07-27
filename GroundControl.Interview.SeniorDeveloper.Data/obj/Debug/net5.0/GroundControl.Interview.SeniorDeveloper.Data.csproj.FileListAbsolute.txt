@@ -1,0 +1,15 @@
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.deps.json
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.dll
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\bin\Debug\net5.0\ref\GroundControl.Interview.SeniorDeveloper.Data.dll
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.pdb
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.dll
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\bin\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Model.pdb
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.csprojAssemblyReference.cache
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.AssemblyInfoInputs.cache
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.AssemblyInfo.cs
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.csproj.CoreCompileInputs.cache
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.csproj.CopyComplete
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.dll
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\ref\GroundControl.Interview.SeniorDeveloper.Data.dll
+C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Data\obj\Debug\net5.0\GroundControl.Interview.SeniorDeveloper.Data.pdb

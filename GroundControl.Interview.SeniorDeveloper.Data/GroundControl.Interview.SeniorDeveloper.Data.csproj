@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GroundControl.Interview.SeniorDeveloper.Model\GroundControl.Interview.SeniorDeveloper.Model.csproj" />
   </ItemGroup>
 
