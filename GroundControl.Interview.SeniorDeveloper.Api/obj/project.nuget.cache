@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XZ8kWE7dqbi2fRaeSt5IB3+uNxVhIPL0NzT5DFhHJdnj335mH/k+qoAVggMEp+sBUjvvAiDs5VuRSXrFCC1jXA==",
+  "dgSpecHash": "QvhOsIgPp3WC1NYKD/fb67JoxqEq47FiNmpfSgf893ho6aVBmVha2TLoaowQ/HH41A+HEQLbW82teK9Hpdx4Yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ConorMaher\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\ConorMaher\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ConorMaher\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ConorMaher\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

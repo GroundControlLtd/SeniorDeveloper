@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "haAjSMdPLESPf2/MIP1bKk4ecKMtOhpJdGOOFsV0OA3xLGxbvkrAttnvjAd+3otACnRWgd2Bv8m7r10h9MpSpQ==",
+  "dgSpecHash": "awVGTBl0kUeaB7STawHcbM1hCVdiXGkhrMGJrInOmjwELclYDeMWxnfpsFCeBrv03yqRsXjeTbjWXQdgVE3dmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ConorMaher\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512"
+  ],
   "logs": []
 }
