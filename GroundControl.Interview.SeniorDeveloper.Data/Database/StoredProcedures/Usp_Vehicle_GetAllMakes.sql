@@ -2,8 +2,8 @@
 AS
 BEGIN
 	SELECT
-		[MakeId],
-		[Make]
+		[MakeId] AS Id,
+		[Make] AS [Name]
 	FROM
 		[VehicleMake]
 END

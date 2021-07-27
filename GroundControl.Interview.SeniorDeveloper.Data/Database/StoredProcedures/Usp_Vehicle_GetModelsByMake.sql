@@ -5,9 +5,11 @@
 AS
 BEGIN
 	SELECT
-		[ModelId],
-		[Model]
+		[ModelId] AS Id,
+		[Model] AS [Name]
 	FROM
 		[VehicleModel]
+	WHERE
+		MakeId = @MakeId
 END
 GO
