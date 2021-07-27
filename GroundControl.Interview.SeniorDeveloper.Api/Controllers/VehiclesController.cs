@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using GroundControl.Interview.SeniorDeveloper.Data.Contracts;
 using GroundControl.Interview.SeniorDeveloper.Model;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GroundControl.Interview.SeniorDeveloper.Api.Controllers
 {
@@ -8,21 +11,39 @@ namespace GroundControl.Interview.SeniorDeveloper.Api.Controllers
     [Route("[controller]")]
     public class VehiclesController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetMakes()
+        private readonly IVehiclesRepository _vehiclesRepository;
+
+        public VehiclesController(IVehiclesRepository vehiclesRepository)
         {
-            IEnumerable<VehicleMake> result = new List<VehicleMake> { new() { Id = 1, Name = "Test Make" } };
-            // Get results from database 
-            return Ok(result);
+            _vehiclesRepository = vehiclesRepository;
+        }
+
+        //ToDo if time - returning 200 OK but not actually error handling
+
+        [HttpGet]
+        [Route("makes")]
+        [ProducesResponseType(200)]
+        public async Task<ActionResult<IEnumerable<VehicleMake>>> GetMakesAsync()
+        {
+            var results = await _vehiclesRepository.GetMakesAsync();
+
+            return Ok(results);
         }
 
         [HttpGet]
-        [Route("{makeId}/models")]
-        public IActionResult GetModels(int makeId)
+        [Route("models/{makeId}")]
+        [ProducesResponseType(200)]
+        public async Task<ActionResult<IEnumerable<VehicleModel>>> GetModelsByMakeAsync(int makeId)
         {
-            // using the makeId parameter, get the results from the database
-            IEnumerable<VehicleModel> result = new List<VehicleModel> {new() { Id = 1, Name = "Test Model"  }, new() { Id = 2, Name = "Test Model 2" } };
-            return Ok(result);
+            var results = await _vehiclesRepository.GetModelsByMakeAsync(makeId);
+
+            // ToDo - Might need to take this out for time sake if it requires error handling in the web, but this is better practice
+            if (results == null || !results.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(results);
         }
     }
 }

@@ -12,3 +12,5 @@ USE [cm27072021]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [cm27072021]
 GO
+
+-- ToDo - if time, might be convenient to bundle these three scripts into the garage.sql script

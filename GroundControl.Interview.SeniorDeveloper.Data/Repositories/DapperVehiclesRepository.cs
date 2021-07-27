@@ -9,7 +9,7 @@ namespace GroundControl.Interview.SeniorDeveloper.Data.Repositories
 {
     public class DapperVehiclesRepository : IVehiclesRepository
     {
-        // Use DTO models for the data layer and implement a mapper to the API models, if time near the end
+        // ToDo - Use DTO models for the data layer and implement a mapper to the API models, if time near the end
         private readonly IDbConnection _dbConnection;
 
         private readonly string Sp_GetAllMakes = "Usp_Vehicle_GetAllMakes";
@@ -20,7 +20,7 @@ namespace GroundControl.Interview.SeniorDeveloper.Data.Repositories
             _dbConnection = dbConnection;
         }
 
-        // Todo if time - error handling around results/data access for these two functions
+        // TodDo if time - error handling around results/data access for these two functions
         public async Task<IEnumerable<VehicleMake>> GetMakesAsync()
         {
             var results = await _dbConnection.QueryAsync<VehicleMake>(Sp_GetAllMakes, CommandType.StoredProcedure);
