@@ -1,3 +1,5 @@
+using GroundControl.Interview.SeniorDeveloper.Data.Contracts;
+using GroundControl.Interview.SeniorDeveloper.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -30,6 +32,7 @@ namespace GroundControl.Interview.SeniorDeveloper.Api
             // Ideally move to extension method to seperate concerns during DI, if time
             // services.ConfigurePersistence or similar
             services.AddTransient<IDbConnection>((sp) => new SqlConnection(_configuration.GetConnectionString("cm27072021")));
+            services.AddScoped<IVehiclesRepository, DapperVehiclesRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
