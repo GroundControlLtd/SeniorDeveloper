@@ -5,40 +5,63 @@
 
 @inject IHttpClientFactory ClientFactory
 
-@if (_makes != null)
+@if (nonSuccessStatusCode)
 {
-    <EditForm Model="this">
-        <label>Select Make</label><br />
-        <InputSelect @bind-Value="_selectedMakeId">
-            <option value="0"> --- Select Vehicle Make --- </option>
-            @foreach (var make in _makes)
-                {
-                <option value="@make.Id">@make.Name</option>
-                }
-        </InputSelect>
-    </EditForm>
+    <p>An issue occured during the API Request.</p>
 }
 else
 {
-    <b>Loading...</b>
-}
+    @if (_makes != null)
+    {
+        <EditForm Model="this">
+            <label>Vehicle Make</label><br />
+            <InputSelect Value="@_selectedMakeId" ValueChanged="@(async (int value) => { _selectedMakeId = value; await OnMakeSelected(); })" ValueExpression="@(() => _selectedMakeId)">
+                <option value="0"> --- Select Vehicle Make --- </option>
+                @foreach (var make in _makes)
+                {
+                    <option value="@make.Id">@make.Name</option>
+                }
+            </InputSelect>
+        </EditForm>
+    }
+    else
+    {
+        <b>Loading...</b>
+    }
 
-@if (_models != null && _models.Any())
-{
-    <EditForm Model="this">
-        <label>Select Model</label><br />
-        <InputSelect @bind-Value="@_selectedModelId">
-            <option value="0"> --- Select Vehicle Model --- </option>
-            @foreach (var model in _models)
-                {
-                <option value="@model.Id">@model.Name</option>
-                }
-        </InputSelect>
-    </EditForm>
-}
-else
-{
-    <p>No Models found for selected Make.</p>
+    <br />
+    <hr />
+
+    @if (_models != null)
+    {
+        @if (_models.Any())
+        {
+            <EditForm Model="this">
+                <label>Vehicle Model</label><br />
+                <InputSelect @bind-Value="@_selectedModelId">
+                    <option value="0"> --- Select Vehicle Model --- </option>
+                    @foreach (var model in _models)
+                                {
+                        <option value="@model.Id">@model.Name</option>
+                                }
+                </InputSelect>
+            </EditForm>
+        }
+        else
+        {
+            <p>No Models found for selected Make.</p>
+        }
+    }
+    else
+    {
+        <br /><p>Please select a vehicle make.</p>
+    }
+
+    <br />
+    <hr />
+
+    <p>Selected Make Id: <b>@_selectedMakeId</b></p>
+    <p>Selected Model Id: <b>@_selectedModelId</b></p>
 }
 
 @code {
@@ -48,33 +71,37 @@ else
     private int _selectedMakeId { get; set; }
     private int _selectedModelId { get; set; }
 
+    private bool nonSuccessStatusCode { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
-        // ToDo if time - move base url to configuration and inject
-
-        // ToDo - duplicate code, can make a generic helper function
-
-        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/makes");
-
-        var client = ClientFactory.CreateClient();
-
-        var response = await client.SendAsync(request);
-
-        using var responseStream = await response.Content.ReadAsStreamAsync();
-
-        _makes = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleMake>>(responseStream);
+        _makes = await CreateGetRequestAsync<VehicleMake>("https://localhost:44309/Vehicles/makes");
     }
 
     private async Task OnMakeSelected()
     {
-        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/models/{_selectedMakeId}");
+        _models = await CreateGetRequestAsync<VehicleModel>($"https://localhost:44309/Vehicles/models/{_selectedMakeId}");
+
+        _selectedModelId = 0;
+    }
+
+    public async Task<IEnumerable<T>> CreateGetRequestAsync<T>(string uri)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, uri);
 
         var client = ClientFactory.CreateClient();
 
         var response = await client.SendAsync(request);
 
-        using var responseStream = await response.Content.ReadAsStreamAsync();
-
-        _models = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleModel>>(responseStream);
+        if (response.IsSuccessStatusCode)
+        {
+            using var responseStream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<IEnumerable<T>>(responseStream);
+        }
+        else
+        {
+            nonSuccessStatusCode = true;
+            return null;
+        }
     }
 }
