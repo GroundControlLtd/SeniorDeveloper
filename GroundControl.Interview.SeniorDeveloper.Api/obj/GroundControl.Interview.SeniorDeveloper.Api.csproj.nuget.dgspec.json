@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {}
+    "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {
+    "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
         "projectName": "GroundControl.Interview.SeniorDeveloper.Api",
-        "projectPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
-        "packagesPath": "C:\\Users\\duthi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\obj\\",
+        "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\GroundControl.Interview.SeniorDeveloper.Api.csproj",
+        "packagesPath": "C:\\Users\\ConorMaher\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\duthi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ConorMaher\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,8 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
-                "projectPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
+              "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj": {
+                "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj"
+              },
+              "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+                "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
               }
             }
           }
@@ -52,6 +50,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -72,26 +74,85 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+    "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
-        "projectName": "GroundControl.Interview.SeniorDeveloper.Model",
-        "projectPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
-        "packagesPath": "C:\\Users\\duthi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duthi\\source\\repos\\GroundControl.Interview.SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\obj\\",
+        "projectUniqueName": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj",
+        "projectName": "GroundControl.Interview.SeniorDeveloper.Data",
+        "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj",
+        "packagesPath": "C:\\Users\\ConorMaher\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\duthi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ConorMaher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+                "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
+        "projectName": "GroundControl.Interview.SeniorDeveloper.Model",
+        "projectPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\GroundControl.Interview.SeniorDeveloper.Model.csproj",
+        "packagesPath": "C:\\Users\\ConorMaher\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ConorMaher\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,7 +192,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

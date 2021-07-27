@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GroundControl.Interview.SeniorDeveloper.Data\GroundControl.Interview.SeniorDeveloper.Data.csproj" />
     <ProjectReference Include="..\GroundControl.Interview.SeniorDeveloper.Model\GroundControl.Interview.SeniorDeveloper.Model.csproj" />
   </ItemGroup>
 

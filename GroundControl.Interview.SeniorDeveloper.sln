@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroundControl.Interview.SeniorDeveloper.Api", "GroundControl.Interview.SeniorDeveloper.Api\GroundControl.Interview.SeniorDeveloper.Api.csproj", "{8E001ABD-41E4-43FC-99C0-8817F23C7789}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroundControl.Interview.SeniorDeveloper.Api", "GroundControl.Interview.SeniorDeveloper.Api\GroundControl.Interview.SeniorDeveloper.Api.csproj", "{8E001ABD-41E4-43FC-99C0-8817F23C7789}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroundControl.Interview.SeniorDeveloper.Model", "GroundControl.Interview.SeniorDeveloper.Model\GroundControl.Interview.SeniorDeveloper.Model.csproj", "{B9EE68BA-0FA7-48DC-8B13-A0A9451C4C23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroundControl.Interview.SeniorDeveloper.Model", "GroundControl.Interview.SeniorDeveloper.Model\GroundControl.Interview.SeniorDeveloper.Model.csproj", "{B9EE68BA-0FA7-48DC-8B13-A0A9451C4C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroundControl.Interview.SeniorDeveloper.Data", "GroundControl.Interview.SeniorDeveloper.Data\GroundControl.Interview.SeniorDeveloper.Data.csproj", "{1E7A0DA1-7FE5-463C-B67F-1AE7EA5CD05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroundControl.Interview.SeniorDeveloper.Web", "GroundControl.Interview.SeniorDeveloper.Web\GroundControl.Interview.SeniorDeveloper.Web.csproj", "{91DF0CDC-80CC-4459-B7DD-8BF74DC5B2B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{B9EE68BA-0FA7-48DC-8B13-A0A9451C4C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9EE68BA-0FA7-48DC-8B13-A0A9451C4C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9EE68BA-0FA7-48DC-8B13-A0A9451C4C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7A0DA1-7FE5-463C-B67F-1AE7EA5CD05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7A0DA1-7FE5-463C-B67F-1AE7EA5CD05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7A0DA1-7FE5-463C-B67F-1AE7EA5CD05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7A0DA1-7FE5-463C-B67F-1AE7EA5CD05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DF0CDC-80CC-4459-B7DD-8BF74DC5B2B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DF0CDC-80CC-4459-B7DD-8BF74DC5B2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DF0CDC-80CC-4459-B7DD-8BF74DC5B2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DF0CDC-80CC-4459-B7DD-8BF74DC5B2B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

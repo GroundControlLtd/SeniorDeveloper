@@ -1,0 +1,107 @@
+﻿@page "/"
+
+@using System.Text.Json
+@using Model;
+
+@inject IHttpClientFactory ClientFactory
+
+@if (nonSuccessStatusCode)
+{
+    <p>An issue occured during the API Request.</p>
+}
+else
+{
+    @if (_makes != null)
+    {
+        <EditForm Model="this">
+            <label>Vehicle Make</label><br />
+            <InputSelect Value="@_selectedMakeId" ValueChanged="@(async (int value) => { _selectedMakeId = value; await OnMakeSelected(); })" ValueExpression="@(() => _selectedMakeId)">
+                <option value="0"> --- Select Vehicle Make --- </option>
+                @foreach (var make in _makes)
+                {
+                    <option value="@make.Id">@make.Name</option>
+                }
+            </InputSelect>
+        </EditForm>
+    }
+    else
+    {
+        <b>Loading...</b>
+    }
+
+    <br />
+    <hr />
+
+    @if (_models != null)
+    {
+        @if (_models.Any())
+        {
+            <EditForm Model="this">
+                <label>Vehicle Model</label><br />
+                <InputSelect @bind-Value="@_selectedModelId">
+                    <option value="0"> --- Select Vehicle Model --- </option>
+                    @foreach (var model in _models)
+					{
+                        <option value="@model.Id">@model.Name</option>
+					}
+                </InputSelect>
+            </EditForm>
+        }
+        else
+        {
+            <p>No Models found for selected Make.</p>
+        }
+    }
+    else
+    {
+        <br /><p>Please select a vehicle make.</p>
+    }
+
+    <br />
+    <hr />
+
+    <p>Selected Make Id: <b>@_selectedMakeId</b></p>
+    <p>Selected Model Id: <b>@_selectedModelId</b></p>
+}
+
+@code {
+    private IEnumerable<VehicleMake> _makes { get; set; }
+    private IEnumerable<VehicleModel> _models { get; set; }
+
+    private int _selectedMakeId { get; set; }
+    private int _selectedModelId { get; set; }
+
+    private bool nonSuccessStatusCode { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _makes = await CreateGetRequestAsync<VehicleMake>("https://localhost:44309/Vehicles/makes");
+    }
+
+    private async Task OnMakeSelected()
+    {
+        _models = await CreateGetRequestAsync<VehicleModel>($"https://localhost:44309/Vehicles/models/{_selectedMakeId}");
+
+        _selectedModelId = 0;
+    }
+
+    public async Task<IEnumerable<T>> CreateGetRequestAsync<T>(string uri)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, uri);
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            using var responseStream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<IEnumerable<T>>(responseStream);
+        }
+        else
+        {
+            nonSuccessStatusCode = true;
+            return null;
+        }
+    }
+}

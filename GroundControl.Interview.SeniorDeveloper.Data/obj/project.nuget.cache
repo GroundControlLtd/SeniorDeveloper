@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "awVGTBl0kUeaB7STawHcbM1hCVdiXGkhrMGJrInOmjwELclYDeMWxnfpsFCeBrv03yqRsXjeTbjWXQdgVE3dmA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ConorMaher\\source\\repos\\SeniorDeveloper\\GroundControl.Interview.SeniorDeveloper.Data\\GroundControl.Interview.SeniorDeveloper.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ConorMaher\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512"
+  ],
+  "logs": []
+}
