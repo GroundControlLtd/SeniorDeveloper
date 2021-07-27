@@ -105,7 +105,7 @@ using Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Web\Pages\Index.razor"
+#line 67 "C:\Users\ConorMaher\source\repos\SeniorDeveloper\GroundControl.Interview.SeniorDeveloper.Web\Pages\Index.razor"
        
     private IEnumerable<VehicleMake> _makes { get; set; }
     private IEnumerable<VehicleModel> _models { get; set; }
@@ -113,34 +113,38 @@ using Model;
     private int _selectedMakeId { get; set; }
     private int _selectedModelId { get; set; }
 
+    private bool nonSuccessStatusCode { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
-        // ToDo if time - move base url to configuration and inject
-
-        // ToDo - duplicate code, can make a generic helper function
-
-        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/makes");
-
-        var client = ClientFactory.CreateClient();
-
-        var response = await client.SendAsync(request);
-
-        using var responseStream = await response.Content.ReadAsStreamAsync();
-
-        _makes = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleMake>>(responseStream);
+        _makes = await CreateGetRequestAsync<VehicleMake>("https://localhost:44309/Vehicles/makes");
     }
 
     private async Task OnMakeSelected()
     {
-        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44309/vehicles/models/{_selectedMakeId}");
+        _models = await CreateGetRequestAsync<VehicleModel>($"https://localhost:44309/Vehicles/models/{_selectedMakeId}");
+
+        _selectedModelId = 0;
+    }
+
+    public async Task<IEnumerable<T>> CreateGetRequestAsync<T>(string uri)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, uri);
 
         var client = ClientFactory.CreateClient();
 
         var response = await client.SendAsync(request);
 
-        using var responseStream = await response.Content.ReadAsStreamAsync();
-
-        _models = await JsonSerializer.DeserializeAsync<IEnumerable<VehicleModel>>(responseStream);
+        if (response.IsSuccessStatusCode)
+        {
+            using var responseStream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<IEnumerable<T>>(responseStream);
+        }
+        else
+        {
+            nonSuccessStatusCode = true;
+            return null;
+        }
     }
 
 #line default
